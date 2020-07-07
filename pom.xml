@@ -5,6 +5,7 @@
         <groupId>org.mule.extensions</groupId>
         <artifactId>mule-core-modules-parent</artifactId>
         <version>1.1.8</version>
+        <!--<version>1.4.0-SNAPSHOT</version>-->
     </parent>
 
     <groupId>org.mule.modules</groupId>
@@ -17,6 +18,7 @@
         <muleHttpConnectorVersion>1.5.22</muleHttpConnectorVersion>
         <muleSocketsConnectorVersion>1.1.5</muleSocketsConnectorVersion>
         <muleObjectStoreConnectorTestVersion>1.1.5</muleObjectStoreConnectorTestVersion>
+        <muleOAuthClientVersion>1.0.0-SNAPSHOT</muleOAuthClientVersion>
         <commonsCodecVersion>1.15</commonsCodecVersion>
         <formatterConfigPath>formatter.xml</formatterConfigPath>
 
@@ -182,11 +184,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.mule.services</groupId>
-            <artifactId>mule-service-oauth</artifactId>
-            <version>${muleOAuthServiceVersion}</version>
-            <classifier>mule-service</classifier>
-            <scope>provided</scope>
+            <groupId>org.mule.commons</groupId>
+            <artifactId>mule-oauth-client</artifactId>
+            <version>${muleOAuthClientVersion}</version>
         </dependency>
 
         <dependency>
