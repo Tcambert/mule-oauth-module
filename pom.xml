@@ -5,6 +5,8 @@
         <groupId>org.mule.extensions</groupId>
         <artifactId>mule-core-modules-parent</artifactId>
         <version>1.1.8</version>
+        <!-- This dependency has been updated to set min mule version to 4.3.1 -->
+        <!-- We need that to break dependency with mule-oauth-service in favor of mule-oauth-client usage -->
         <!--<version>1.3.1-SNAPSHOT</version>-->
     </parent>
 
@@ -21,7 +23,6 @@
         <muleOAuthClientVersion>0.8.0-SNAPSHOT</muleOAuthClientVersion>
         <commonsCodecVersion>1.15</commonsCodecVersion>
         <formatterConfigPath>formatter.xml</formatterConfigPath>
-        <!--<mule.weave.version>2.3.1-SNAPSHOT</mule.weave.version>-->
 
         <!-- Remove when a new parent version with MTF is available -->
         <munit.input.directory>src/test/munit</munit.input.directory>
