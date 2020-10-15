@@ -30,7 +30,6 @@
         <munit.version>2.3.1</munit.version>
         <mtf-tools.version>1.0.0</mtf-tools.version>
         <mavenResources.version>3.0.2</mavenResources.version>
-        <mule.weave.version>2.3.1</mule.weave.version>
     </properties>
     <build>
         <plugins>
@@ -189,12 +188,6 @@
             <version>${muleObjectStoreConnectorTestVersion}</version>
             <classifier>mule-plugin</classifier>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mule.runtime</groupId>
-            <artifactId>mule-dwb-api</artifactId>
-            <version>${mule.weave.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.mule.services</groupId>
